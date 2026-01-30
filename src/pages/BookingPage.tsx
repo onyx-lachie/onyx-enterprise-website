@@ -77,10 +77,8 @@ export default function BookingPage() {
                 width: '100%',
                 height: '700px',
                 border: 'none',
-                borderRadius: '12px',
-                overflow: 'hidden'
+                borderRadius: '12px'
               }}
-              scrolling="no"
               title="Book a Demo"
             />
           </div>
