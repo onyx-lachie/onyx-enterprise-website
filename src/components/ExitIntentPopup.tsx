@@ -49,9 +49,9 @@ export default function ExitIntentPopup() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[201] w-full max-w-[480px] mx-4"
+            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[201] w-[calc(100%-2rem)] max-w-[480px] max-h-[90vh] overflow-y-auto"
           >
-            <div className="bg-white rounded-3xl shadow-[0_24px_64px_rgba(0,0,0,0.2)] p-12 relative">
+            <div className="bg-white rounded-3xl shadow-[0_24px_64px_rgba(0,0,0,0.2)] p-8 md:p-12 relative">
               <button
                 onClick={() => setIsVisible(false)}
                 className="absolute top-6 right-6 text-[#9DA2B3] hover:text-[#1C1C1E] transition-colors"
