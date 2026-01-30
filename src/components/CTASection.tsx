@@ -71,6 +71,7 @@ export default function CTASection() {
           <motion.button
             whileHover={{ scale: 1.02, y: -4, boxShadow: '0 20px 60px rgba(255,255,255,0.4)' }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => scrollToSection('pricing')}
             className="px-8 py-4 rounded-lg font-semibold text-base bg-white text-[#1C1C1E] shadow-[0_10px_40px_rgba(255,255,255,0.2)] transition-all duration-300"
           >
             Start Your 14-Day Trial

@@ -1,15 +1,31 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom';
 import { Plug, Rocket, CalendarCheck } from 'lucide-react';
 import SectionHeader from './ui/SectionHeader';
 import Button from './ui/Button';
 import SocialProofTicker from './SocialProofTicker';
 
 export default function HowItWorks() {
+  const navigate = useNavigate();
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true
   });
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 72;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   const steps = [
     {
@@ -83,8 +99,8 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-16"
         >
-          <Button variant="primary">Start Your 14-Day Trial</Button>
-          <Button variant="secondary">Book a Demo</Button>
+          <Button variant="primary" onClick={() => scrollToSection('pricing')}>Start Your 14-Day Trial</Button>
+          <Button variant="secondary" onClick={() => navigate('/book-demo')}>Book a Demo</Button>
         </motion.div>
       </div>
 

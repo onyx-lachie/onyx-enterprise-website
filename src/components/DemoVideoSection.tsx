@@ -41,7 +41,7 @@ export default function DemoVideoSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center text-sm text-[#9DA2B3] mt-6"
           >
-            No signup required. No credit card. Just see it work.
+            14-day money back guarantee. No questions asked.
           </motion.p>
         </motion.div>
       </div>
