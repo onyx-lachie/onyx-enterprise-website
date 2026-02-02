@@ -9,6 +9,7 @@ export default function Hero() {
   const navigate = useNavigate();
 
   const scrollToPricing = () => {
+    window.location.hash = 'pricing';
     const element = document.getElementById('pricing');
     if (element) {
       const offset = 72;

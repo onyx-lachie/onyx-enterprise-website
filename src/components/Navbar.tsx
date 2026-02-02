@@ -23,8 +23,9 @@ export default function Navbar() {
     setMobileMenuOpen(false);
 
     if (location.pathname !== '/') {
-      navigate('/', { state: { scrollTo: id } });
+      navigate(`/#${id}`);
     } else {
+      window.location.hash = id;
       const element = document.getElementById(id);
       if (element) {
         const offset = 72;

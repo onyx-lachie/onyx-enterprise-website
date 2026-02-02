@@ -3,6 +3,7 @@ import Button from './ui/Button';
 
 export default function CTASection() {
   const scrollToSection = (id: string) => {
+    window.location.hash = id;
     const element = document.getElementById(id);
     if (element) {
       const offset = 72;

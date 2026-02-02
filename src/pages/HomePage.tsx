@@ -26,23 +26,28 @@ export default function HomePage() {
   const location = useLocation();
 
   useEffect(() => {
+    const scrollToElement = (id: string) => {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 72;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
     const state = location.state as { scrollTo?: string } | null;
     if (state?.scrollTo) {
-      setTimeout(() => {
-        const element = document.getElementById(state.scrollTo!);
-        if (element) {
-          const offset = 72;
-          const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-      }, 100);
+      setTimeout(() => scrollToElement(state.scrollTo!), 100);
+    } else if (location.hash) {
+      const hash = location.hash.substring(1);
+      setTimeout(() => scrollToElement(hash), 100);
     }
-  }, [location.state]);
+  }, [location.state, location.hash]);
 
   return (
     <>
