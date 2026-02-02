@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import { X, FileText } from 'lucide-react';
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,16 +14,23 @@ export default function ExitIntentPopup() {
       return;
     }
 
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 10 && !hasShown && window.innerWidth >= 768) {
+    let lastY = 0;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      if (hasShown) return;
+
+      const movingUp = e.clientY < lastY;
+      lastY = e.clientY;
+
+      if (e.clientY <= 20 && movingUp && window.innerWidth >= 768) {
         setIsVisible(true);
         setHasShown(true);
         sessionStorage.setItem('exitPopupShown', 'true');
       }
     };
 
-    document.addEventListener('mouseleave', handleMouseLeave);
-    return () => document.removeEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => document.removeEventListener('mousemove', handleMouseMove);
   }, [hasShown]);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -45,13 +52,13 @@ export default function ExitIntentPopup() {
           />
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.95, y: '-50%', x: '-50%' }}
+            animate={{ opacity: 1, scale: 1, y: '-50%', x: '-50%' }}
+            exit={{ opacity: 0, scale: 0.95, y: '-50%', x: '-50%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[201] w-[calc(100%-2rem)] max-w-[480px] max-h-[90vh] overflow-y-auto"
+            className="fixed top-1/2 left-1/2 z-[201] w-[90%] sm:w-auto"
           >
-            <div className="bg-white rounded-3xl shadow-[0_24px_64px_rgba(0,0,0,0.2)] p-8 md:p-12 relative">
+            <div className="bg-white rounded-3xl shadow-[0_24px_64px_rgba(0,0,0,0.2)] p-8 md:p-12 relative max-w-[480px] mx-auto max-h-[90vh] overflow-y-auto">
               <button
                 onClick={() => setIsVisible(false)}
                 className="absolute top-6 right-6 text-[#9DA2B3] hover:text-[#1C1C1E] transition-colors"
@@ -71,7 +78,7 @@ export default function ExitIntentPopup() {
                 </h3>
 
                 <div className="w-32 h-40 mx-auto mb-6 bg-gradient-to-br from-[#00F0B5] to-[#1C1C1E] rounded-lg shadow-lg flex items-center justify-center">
-                  <div className="text-white text-5xl">📚</div>
+                  <FileText size={64} className="text-white" strokeWidth={1.5} />
                 </div>
 
                 <form onSubmit={handleSubmit}>
