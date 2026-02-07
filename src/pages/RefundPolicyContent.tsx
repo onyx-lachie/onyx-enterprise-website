@@ -54,7 +54,7 @@ export default function RefundPolicyContent() {
         </p>
 
         <div className="bg-[#E6FFF8] rounded-xl p-6 border border-[#00F0B5]/30 mb-4">
-          <p className="text-[#1C1C1E] font-semibold mb-2">Email: support@onyx-crm.com</p>
+          <p className="text-[#1C1C1E] font-semibold mb-2">Email: admin@onyx-crm.com</p>
           <p className="text-[#6E7180] mb-1">Subject Line: Refund Request - [Your Name]</p>
           <p className="text-[#6E7180] mt-3 mb-2">Include:</p>
           <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
@@ -107,7 +107,7 @@ export default function RefundPolicyContent() {
         <ol className="list-decimal pl-6 space-y-2 text-[#6E7180]">
           <li>Log into your Onyx account</li>
           <li>Go to <strong className="text-[#1C1C1E]">Settings → Billing → Cancel Subscription</strong></li>
-          <li>Or email support@onyx-crm.com</li>
+          <li>Or email admin@onyx-crm.com</li>
         </ol>
       </section>
 
@@ -153,7 +153,7 @@ export default function RefundPolicyContent() {
           If you believe you've been charged in error:
         </p>
         <ul className="list-disc pl-6 space-y-2 text-[#6E7180] mb-4">
-          <li>Contact us immediately at support@onyx-crm.com</li>
+          <li>Contact us immediately at admin@onyx-crm.com</li>
           <li>We will investigate within 2 business days</li>
           <li>Legitimate billing errors will be refunded in full</li>
         </ul>
@@ -286,7 +286,7 @@ export default function RefundPolicyContent() {
           If you have any questions about our refund policy or need assistance with a refund request:
         </p>
         <div className="bg-[#E6FFF8] rounded-xl p-6 border border-[#00F0B5]/30">
-          <p className="text-[#1C1C1E] font-semibold mb-1">Email: support@onyx-crm.com</p>
+          <p className="text-[#1C1C1E] font-semibold mb-1">Email: admin@onyx-crm.com</p>
           <p className="text-[#1C1C1E] font-semibold mb-1">Phone: 737-325-8808</p>
           <p className="text-[#6E7180] mb-3">Hours: Monday-Friday, 9am-5pm CT</p>
           <p className="text-[#6E7180]">Mailing Address:<br/>Quantum Automation Pty Ltd<br/>Unit 607, 107 Beach Street<br/>Port Melbourne, Victoria 3207<br/>Australia</p>
