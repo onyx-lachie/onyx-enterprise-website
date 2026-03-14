@@ -13,7 +13,7 @@ export default function RefundPolicyContent() {
 
         <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">The Promise</h3>
         <p className="text-[#6E7180] leading-relaxed mb-4">
-          If you're not completely satisfied with Onyx within the first <strong className="text-[#1C1C1E]">14 days</strong> of your initial subscription, we'll give you a <strong className="text-[#1C1C1E]">full refund</strong> — no questions asked.
+          If you're not completely satisfied with Onyx within the first <strong className="text-[#1C1C1E]">14 days</strong> of your initial subscription, we'll give you a <strong className="text-[#1C1C1E]">full refund of your subscription fee</strong> — no questions asked.
         </p>
 
         <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">How It Works</h3>
@@ -21,7 +21,7 @@ export default function RefundPolicyContent() {
           <li><strong className="text-[#1C1C1E]">Sign up</strong> for the Onyx Prime plan</li>
           <li><strong className="text-[#1C1C1E]">Try the platform</strong> for up to 14 days</li>
           <li><strong className="text-[#1C1C1E]">If it's not for you</strong>, contact us within 14 days of your initial purchase</li>
-          <li><strong className="text-[#1C1C1E]">Receive a full refund</strong> within 5-10 business days</li>
+          <li><strong className="text-[#1C1C1E]">Receive a full refund</strong> of your subscription fee within 5-10 business days</li>
         </ol>
 
         <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">Eligibility</h3>
@@ -40,6 +40,8 @@ export default function RefundPolicyContent() {
         <ul className="list-none pl-0 space-y-2 text-[#6E7180]">
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Subscription renewals (second month and beyond)</span></li>
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Previous subscribers who are returning</span></li>
+          <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Usage-based charges (SMS messages, phone calls)</span></li>
+          <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>A2P registration fee ($25 one-time)</span></li>
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Add-on services or custom development work</span></li>
         </ul>
       </section>

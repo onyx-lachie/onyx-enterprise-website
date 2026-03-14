@@ -38,7 +38,7 @@ export default function PricingSection() {
         <SectionHeader
           eyebrow="PRICING"
           headline="Simple Pricing. Serious Results."
-          subheadline="No hidden fees. No long-term contracts. 14-day full refund if it's not for you."
+          subheadline="No long-term contracts. Usage-based SMS and call fees apply. 14-day subscription refund if it's not for you."
         />
 
         <div ref={ref} className="max-w-md mx-auto mb-8">
@@ -54,6 +54,10 @@ export default function PricingSection() {
                 <div className="mb-3">
                   <span className="text-5xl font-bold text-[#1C1C1E]">${plan.price}</span>
                   <span className="text-base text-[#9DA2B3]">/month</span>
+                  <p className="text-xs text-[#9DA2B3] mt-1">
+                    + $25 one-time A2P registration fee. SMS and call usage fees apply.{' '}
+                    <a href="/terms-of-service" className="underline hover:text-[#6E7180]">See Terms</a>.
+                  </p>
                 </div>
                 <p className="text-sm text-[#6E7180] leading-relaxed">{plan.tagline}</p>
               </div>
@@ -87,7 +91,7 @@ export default function PricingSection() {
               <Shield size={24} className="text-[#1C1C1E]" />
             </div>
             <p className="text-base font-medium text-[#1C1C1E] leading-relaxed flex-grow">
-              14-Day Money-Back Guarantee — Try Onyx risk-free. If you're not completely satisfied within 14 days, we'll refund every cent. No questions. No hassle.
+              14-Day Money-Back Guarantee — New subscribers can try Onyx risk-free. If you're not completely satisfied within 14 days of your first subscription, we'll refund your subscription fee. Usage-based charges and the A2P registration fee are non-refundable.
             </p>
           </div>
         </motion.div>

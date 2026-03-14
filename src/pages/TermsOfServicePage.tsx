@@ -140,12 +140,13 @@ export default function TermsOfServicePage() {
                 </p>
                 <div className="bg-[#F8FAFB] rounded-xl p-6 border border-[#E8EAF0] mb-4">
                   <ul className="list-disc pl-6 space-y-2 text-[#6E7180]">
+                    <li><strong className="text-[#1C1C1E]">A2P Registration Fee:</strong> $25 one-time fee (required for SMS messaging compliance)</li>
                     <li><strong className="text-[#1C1C1E]">SMS Messages:</strong> $0.0124 per 160-character SMS segment</li>
                     <li><strong className="text-[#1C1C1E]">Outbound Phone Calls:</strong> $0.021 per minute</li>
                     <li><strong className="text-[#1C1C1E]">Inbound Phone Calls:</strong> $0.0128 per minute</li>
                   </ul>
                   <p className="text-[#6E7180] mt-3 text-sm">
-                    Messages exceeding 160 characters will be split into multiple segments and billed accordingly. Usage fees are billed in arrears and charged to your payment method on file.
+                    Messages exceeding 160 characters will be split into multiple segments and billed accordingly. Usage fees are billed in arrears and charged to your payment method on file. The A2P registration fee is a one-time, non-refundable charge required for Application-to-Person SMS messaging compliance.
                   </p>
                 </div>
 
@@ -198,7 +199,7 @@ export default function TermsOfServicePage() {
 
                 <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">6.2 14-Day Money-Back Guarantee</h3>
                 <p className="text-[#6E7180] leading-relaxed mb-4">
-                  We offer a 14-day money-back guarantee for new subscribers. If you are not satisfied with the Service within the first 14 days of your initial Subscription, you may request a full refund by contacting support@onyx-crm.com. This guarantee applies only to your first Subscription and does not apply to renewals.
+                  We offer a 14-day money-back guarantee for new subscribers. If you are not satisfied with the Service within the first 14 days of your initial Subscription, you may request a full refund of your subscription fee by contacting support@onyx-crm.com. This guarantee applies only to the monthly subscription fee on your first Subscription and does not apply to renewals. Usage-based charges (SMS, phone calls) and the one-time A2P registration fee are non-refundable regardless of when cancellation occurs.
                 </p>
 
                 <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">6.3 Refund Policy</h3>
