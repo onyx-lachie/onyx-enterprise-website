@@ -16,7 +16,7 @@ export default function TermsOfServicePage() {
               Terms of Service
             </h1>
             <p className="text-lg text-[#6E7180]">
-              Last Updated: January 30, {new Date().getFullYear()}
+              Last Updated: March 14, 2026
             </p>
           </div>
 

@@ -87,7 +87,7 @@ export default function PricingSection() {
               <Shield size={24} className="text-[#1C1C1E]" />
             </div>
             <p className="text-base font-medium text-[#1C1C1E] leading-relaxed flex-grow">
-              14-Day Money-Back Guarantee — Try Onyx risk-free. If you're not booking more appointments within 14 days, we'll refund every cent. No questions. No hassle.
+              14-Day Money-Back Guarantee — Try Onyx risk-free. If you're not completely satisfied within 14 days, we'll refund every cent. No questions. No hassle.
             </p>
           </div>
         </motion.div>
