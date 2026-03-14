@@ -38,7 +38,7 @@ export default function TermsOfServicePage() {
                   <li><strong className="text-[#1C1C1E]">"Account"</strong> means your registered account to access and use the Service.</li>
                   <li><strong className="text-[#1C1C1E]">"Content"</strong> means any data, text, files, information, usernames, images, graphics, or other materials you upload, post, or transmit through the Service.</li>
                   <li><strong className="text-[#1C1C1E]">"Customer Data"</strong> means any data, including personal data of your contacts and leads, that you input into or collect through the Service.</li>
-                  <li><strong className="text-[#1C1C1E]">"Subscription"</strong> means your paid access to the Service under a specific plan (Core, Prime, or Elite AI).</li>
+                  <li><strong className="text-[#1C1C1E]">"Subscription"</strong> means your paid access to the Service under the Prime plan.</li>
                   <li><strong className="text-[#1C1C1E]">"User"</strong> or <strong className="text-[#1C1C1E]">"You"</strong> means the individual or entity accessing or using the Service.</li>
                 </ul>
               </section>
@@ -131,9 +131,7 @@ export default function TermsOfServicePage() {
                   We offer the following subscription plans:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-[#6E7180] mb-4">
-                  <li><strong className="text-[#1C1C1E]">Core</strong> ($99/month): All 7 Onyx Stacks, pre-built text campaigns, unified inbox, basic automations, Slack channel support, done-for-you onboarding</li>
-                  <li><strong className="text-[#1C1C1E]">Prime</strong> ($149/month): Everything in Core plus AI appointment booking, advanced AI features, database reactivation, annual review automation, priority support, custom workflows</li>
-                  <li><strong className="text-[#1C1C1E]">Elite AI</strong> ($499/month + $1,499 setup): Everything in Prime plus inbound voice AI receptionist, AI appointment booking via phone, custom-built sales simulation tool, dedicated account manager, custom integrations</li>
+                  <li><strong className="text-[#1C1C1E]">Prime</strong> ($65/month): All 7 Onyx Stacks, pre-built text campaigns, unified inbox, AI appointment booking, advanced AI features, database reactivation, annual review automation, priority support, custom workflows, done-for-you onboarding</li>
                 </ul>
 
                 <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">5.2 Billing</h3>
@@ -196,7 +194,7 @@ export default function TermsOfServicePage() {
                   <li>All fees are non-refundable</li>
                   <li>No refunds will be issued for partial months of service</li>
                   <li>No refunds will be issued for unused features or downgraded plans</li>
-                  <li>Setup fees for Elite AI plans are non-refundable once onboarding has commenced</li>
+                  <li>No refunds will be issued for add-on services or custom development work</li>
                 </ul>
 
                 <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">6.4 Termination by Us</h3>

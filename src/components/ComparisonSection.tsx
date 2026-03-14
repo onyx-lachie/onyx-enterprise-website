@@ -42,7 +42,7 @@ export default function ComparisonSection() {
     },
     {
       feature: 'Price',
-      onyx: '$99-149/mo',
+      onyx: '$65/mo',
       genericCRM: '$200-500/mo',
       spreadsheets: 'Free but chaos'
     }

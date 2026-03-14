@@ -18,7 +18,7 @@ export default function RefundPolicyContent() {
 
         <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">How It Works</h3>
         <ol className="list-decimal pl-6 space-y-2 text-[#6E7180] mb-4">
-          <li><strong className="text-[#1C1C1E]">Sign up</strong> for any Onyx plan (Core, Prime, or Elite AI)</li>
+          <li><strong className="text-[#1C1C1E]">Sign up</strong> for the Onyx Prime plan</li>
           <li><strong className="text-[#1C1C1E]">Try the platform</strong> for up to 14 days</li>
           <li><strong className="text-[#1C1C1E]">If it's not for you</strong>, contact us within 14 days of your initial purchase</li>
           <li><strong className="text-[#1C1C1E]">Receive a full refund</strong> within 5-10 business days</li>
@@ -30,7 +30,7 @@ export default function RefundPolicyContent() {
         </p>
         <ul className="list-none pl-0 space-y-2 text-[#6E7180] mb-4">
           <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>New subscribers only (first-time Onyx users)</span></li>
-          <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>All subscription plans (Core, Prime, Elite AI)</span></li>
+          <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>The Prime subscription plan</span></li>
           <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>Monthly subscription fees</span></li>
         </ul>
 
@@ -40,7 +40,6 @@ export default function RefundPolicyContent() {
         <ul className="list-none pl-0 space-y-2 text-[#6E7180]">
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Subscription renewals (second month and beyond)</span></li>
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Previous subscribers who are returning</span></li>
-          <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Setup fees for Elite AI plans (once onboarding has commenced)</span></li>
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Add-on services or custom development work</span></li>
         </ul>
       </section>
@@ -116,30 +115,11 @@ export default function RefundPolicyContent() {
 
         <div className="space-y-4">
           <div className="bg-white rounded-xl p-6 border border-[#E8EAF0]">
-            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Core Plan ($99/month)</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Prime Plan ($65/month)</h3>
             <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
               <li>14-day money-back guarantee applies</li>
               <li>No setup fees</li>
               <li>Cancel anytime</li>
-            </ul>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 border border-[#E8EAF0]">
-            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Prime Plan ($149/month)</h3>
-            <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
-              <li>14-day money-back guarantee applies</li>
-              <li>No setup fees</li>
-              <li>Cancel anytime</li>
-            </ul>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 border border-[#E8EAF0]">
-            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Elite AI Plan ($499/month + $1,499 setup)</h3>
-            <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
-              <li>14-day money-back guarantee applies to the <strong className="text-[#1C1C1E]">monthly subscription fee only</strong></li>
-              <li><strong className="text-[#1C1C1E]">Setup fee ($1,499)</strong> is non-refundable once onboarding has begun</li>
-              <li>If you cancel within 14 days <strong className="text-[#1C1C1E]">before</strong> your onboarding call, the setup fee will be refunded</li>
-              <li>If you cancel within 14 days <strong className="text-[#1C1C1E]">after</strong> your onboarding call has occurred, only the monthly fee is refundable</li>
             </ul>
           </div>
         </div>
