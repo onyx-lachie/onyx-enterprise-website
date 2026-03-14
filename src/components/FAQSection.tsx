@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useNavigate } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
 import Button from './ui/Button';
 
 export default function FAQSection() {
-  const navigate = useNavigate();
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true
@@ -123,7 +121,7 @@ export default function FAQSection() {
           <p className="text-base text-[#6E7180] mb-6">
             Our team is here to help.
           </p>
-          <Button variant="primary" onClick={() => navigate('/book-demo')}>Contact Us</Button>
+          <Button variant="primary" href="mailto:admin@onyx-crm.com">Contact Us</Button>
         </motion.div>
       </div>
     </section>
