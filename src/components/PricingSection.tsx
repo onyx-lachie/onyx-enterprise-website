@@ -11,7 +11,7 @@ export default function PricingSection() {
   });
 
   const plan = {
-    name: "Prime",
+    name: "Prime Enterprise",
     price: 65,
     tagline: "Everything you need to scale your insurance business.",
     features: [
@@ -54,10 +54,6 @@ export default function PricingSection() {
                 <div className="mb-3">
                   <span className="text-5xl font-bold text-[#1C1C1E]">${plan.price}</span>
                   <span className="text-base text-[#9DA2B3]">/month</span>
-                  <p className="text-xs text-[#9DA2B3] mt-1">
-                    + $25 one-time A2P registration fee. SMS and call usage fees apply.{' '}
-                    <a href="/terms-of-service" className="underline hover:text-[#6E7180]">See Terms</a>.
-                  </p>
                 </div>
                 <p className="text-sm text-[#6E7180] leading-relaxed">{plan.tagline}</p>
               </div>
@@ -76,6 +72,10 @@ export default function PricingSection() {
               <Button variant={plan.variant} className="w-full" href={plan.href}>
                 {plan.cta}
               </Button>
+              <p className="text-xs text-[#9DA2B3] text-center mt-3">
+                One time A2P registration fee, SMS and call usage fees may apply.{' '}
+                <a href="/terms-of-service" className="underline hover:text-[#6E7180]">See Terms for further information</a>.
+              </p>
             </div>
           </motion.div>
         </div>
