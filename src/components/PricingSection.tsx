@@ -29,7 +29,7 @@ export default function PricingSection() {
     cta: "Get Started",
     variant: "primary" as const,
     highlighted: true,
-    href: "https://prime.onyx-crm.com/checkout-page-onyx-prime"
+    href: "https://ent.onyx-crm.com/checkout-page-onyx-enterprise"
   };
 
   return (
