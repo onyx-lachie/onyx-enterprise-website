@@ -13,15 +13,15 @@ export default function RefundPolicyContent() {
 
         <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">The Promise</h3>
         <p className="text-[#6E7180] leading-relaxed mb-4">
-          If you're not completely satisfied with Onyx within the first <strong className="text-[#1C1C1E]">14 days</strong> of your initial subscription, we'll give you a <strong className="text-[#1C1C1E]">full refund</strong> — no questions asked.
+          If you're not completely satisfied with Onyx within the first <strong className="text-[#1C1C1E]">14 days</strong> of your initial subscription, we'll give you a <strong className="text-[#1C1C1E]">full refund of your subscription fee</strong> — no questions asked.
         </p>
 
         <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">How It Works</h3>
         <ol className="list-decimal pl-6 space-y-2 text-[#6E7180] mb-4">
-          <li><strong className="text-[#1C1C1E]">Sign up</strong> for any Onyx plan (Core, Prime, or Elite AI)</li>
+          <li><strong className="text-[#1C1C1E]">Sign up</strong> for the Onyx Prime plan</li>
           <li><strong className="text-[#1C1C1E]">Try the platform</strong> for up to 14 days</li>
           <li><strong className="text-[#1C1C1E]">If it's not for you</strong>, contact us within 14 days of your initial purchase</li>
-          <li><strong className="text-[#1C1C1E]">Receive a full refund</strong> within 5-10 business days</li>
+          <li><strong className="text-[#1C1C1E]">Receive a full refund</strong> of your subscription fee within 5-10 business days</li>
         </ol>
 
         <h3 className="text-xl font-semibold mb-3 text-[#1C1C1E]">Eligibility</h3>
@@ -30,7 +30,7 @@ export default function RefundPolicyContent() {
         </p>
         <ul className="list-none pl-0 space-y-2 text-[#6E7180] mb-4">
           <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>New subscribers only (first-time Onyx users)</span></li>
-          <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>All subscription plans (Core, Prime, Elite AI)</span></li>
+          <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>The Prime subscription plan</span></li>
           <li className="flex items-start gap-2"><span className="text-[#00F0B5] text-xl">✓</span><span>Monthly subscription fees</span></li>
         </ul>
 
@@ -40,7 +40,8 @@ export default function RefundPolicyContent() {
         <ul className="list-none pl-0 space-y-2 text-[#6E7180]">
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Subscription renewals (second month and beyond)</span></li>
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Previous subscribers who are returning</span></li>
-          <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Setup fees for Elite AI plans (once onboarding has commenced)</span></li>
+          <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Usage-based charges (SMS messages, phone calls)</span></li>
+          <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>A2P registration fee ($25 one-time)</span></li>
           <li className="flex items-start gap-2"><span className="text-[#FF4444] text-xl">✗</span><span>Add-on services or custom development work</span></li>
         </ul>
       </section>
@@ -116,30 +117,11 @@ export default function RefundPolicyContent() {
 
         <div className="space-y-4">
           <div className="bg-white rounded-xl p-6 border border-[#E8EAF0]">
-            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Core Plan ($99/month)</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Prime Plan ($65/month)</h3>
             <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
               <li>14-day money-back guarantee applies</li>
-              <li>No setup fees</li>
+              <li>No setup fees (a one-time $25 A2P registration fee is charged by regulators for SMS compliance)</li>
               <li>Cancel anytime</li>
-            </ul>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 border border-[#E8EAF0]">
-            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Prime Plan ($149/month)</h3>
-            <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
-              <li>14-day money-back guarantee applies</li>
-              <li>No setup fees</li>
-              <li>Cancel anytime</li>
-            </ul>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 border border-[#E8EAF0]">
-            <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Elite AI Plan ($499/month + $1,499 setup)</h3>
-            <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
-              <li>14-day money-back guarantee applies to the <strong className="text-[#1C1C1E]">monthly subscription fee only</strong></li>
-              <li><strong className="text-[#1C1C1E]">Setup fee ($1,499)</strong> is non-refundable once onboarding has begun</li>
-              <li>If you cancel within 14 days <strong className="text-[#1C1C1E]">before</strong> your onboarding call, the setup fee will be refunded</li>
-              <li>If you cancel within 14 days <strong className="text-[#1C1C1E]">after</strong> your onboarding call has occurred, only the monthly fee is refundable</li>
             </ul>
           </div>
         </div>
@@ -261,21 +243,10 @@ export default function RefundPolicyContent() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-2 text-[#1C1C1E]">What if I downgrade my plan?</h3>
-            <ul className="list-disc pl-6 space-y-2 text-[#6E7180]">
-              <li>You can downgrade at any time through your account settings</li>
-              <li>The new rate takes effect at your next billing cycle</li>
-              <li>No refunds or credits for the difference in the current billing period</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-2 text-[#1C1C1E]">What if I upgrade my plan?</h3>
-            <ul className="list-disc pl-6 space-y-2 text-[#6E7180]">
-              <li>Upgrades take effect immediately</li>
-              <li>You'll be charged a prorated amount for the remainder of your billing period</li>
-              <li>Your next full billing cycle will be at the new rate</li>
-            </ul>
+            <h3 className="text-lg font-semibold mb-2 text-[#1C1C1E]">Can I change my plan?</h3>
+            <p className="text-[#6E7180] leading-relaxed">
+              The Enterprise offering is a single-tier plan. Plan upgrades and downgrades are not available. If you'd like to explore other options, contact our team at admin@onyx-crm.com.
+            </p>
           </div>
         </div>
       </section>
