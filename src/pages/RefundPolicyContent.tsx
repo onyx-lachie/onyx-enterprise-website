@@ -120,7 +120,7 @@ export default function RefundPolicyContent() {
             <h3 className="text-xl font-semibold mb-2 text-[#1C1C1E]">Prime Plan ($65/month)</h3>
             <ul className="list-disc pl-6 space-y-1 text-[#6E7180]">
               <li>14-day money-back guarantee applies</li>
-              <li>No setup fees</li>
+              <li>No setup fees (a one-time $25 A2P registration fee is charged by regulators for SMS compliance)</li>
               <li>Cancel anytime</li>
             </ul>
           </div>
@@ -243,21 +243,10 @@ export default function RefundPolicyContent() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-2 text-[#1C1C1E]">What if I downgrade my plan?</h3>
-            <ul className="list-disc pl-6 space-y-2 text-[#6E7180]">
-              <li>You can downgrade at any time through your account settings</li>
-              <li>The new rate takes effect at your next billing cycle</li>
-              <li>No refunds or credits for the difference in the current billing period</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-2 text-[#1C1C1E]">What if I upgrade my plan?</h3>
-            <ul className="list-disc pl-6 space-y-2 text-[#6E7180]">
-              <li>Upgrades take effect immediately</li>
-              <li>You'll be charged a prorated amount for the remainder of your billing period</li>
-              <li>Your next full billing cycle will be at the new rate</li>
-            </ul>
+            <h3 className="text-lg font-semibold mb-2 text-[#1C1C1E]">Can I change my plan?</h3>
+            <p className="text-[#6E7180] leading-relaxed">
+              The Enterprise offering is a single-tier plan. Plan upgrades and downgrades are not available. If you'd like to explore other options, contact our team at admin@onyx-crm.com.
+            </p>
           </div>
         </div>
       </section>
